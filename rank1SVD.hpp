@@ -78,7 +78,7 @@ public:
     q(0) = q(0)+1;    //b is only 1 for the first row all others are zero
     double rho = sqrt(( 1 - n*n) );
 
-	mat Q  = zeros<mat>(q.n_rows,1);
+    mat Q  = zeros<mat>(q.n_rows,1);
     if( rho > 1e-7 )  Q = q/rho;
 
     // armadillo reshapes rows first
